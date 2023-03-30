@@ -1,33 +1,203 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width-device-with, initial-scale=1.0">
-  <title>Stash Form</title>
-  <link rel="stylesheet" href="/SewingRoomv2/css/style.css">
-  <link rel="stylesheet" href="/SewingRoomv2/css/reset.css">
-  </head>
-  <body>
-<header>
-  <h1>Add New Pattern</h1>
-</header>
 
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="/SewingRoomv2/form.html">Form</a>
-    <a href="#">WishList</a>
-    <a href="#">Project</a>
-    <a href="#">LogIn</a>
-    <a href="index.html">Home</a>
+<head>
+  <meta name="viewport" content="width-device-with, initial-scale=1.0">
+  <title>My Sewing Room</title>
+  <link rel="stylesheet" href="/SewingRoomv2/css/style.css">
+  <link rel="stylesheet" href="/SewingRoomv2/css/form.css">
+  <link rel="stylesheet" href="/SewingRoomv2/css/reset.css">
+</head>
+
+<body class="formcontainer">
+  <header class="header">
+    <h1 class="formheadings">My Sewing room</h1>
+    <h2 class="formheadings">Add New Pattern</h2>
+  </header>
+
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="/SewingRoomv2/index.html">home</a>
+      <a href="#">WishList</a>
+      <a href="#">Project</a>
+      <a href="#">LogIn</a>
+      <a href="#">Form</a>
+    </div>
   </div>
-</div>
-<main>
-A form will be added here to add to DB
-<inpu>Brand</inpu>
+
+  <main class="form-cont1">
+  
+    <section class="form-cont2">
+    
+    <form class="form">
+      <div class="photoupload">
+        <label for="img">Select image:</label>
+        <input type="file" id="img" name="img" accept="image/*">
+      </div>
+      
+      <div>
+      <label for="brand">Brand</label>
+      <input type="text" id="brand" name="brand">
+    </div>
+    <div>
+      <label for="pattern">Pattern #</label>
+      <input type="text" id="pattern" name="pattern">
+      <label for="reldate">Release Date</label>
+      <input type="date" id="reldate" name="reldate">
+    </div>
+    </section>
+
+    <section class="form-cont3">
+      <label for="size">Size</label>
+      <select id="cars" name="size" size="4" multiple>
+        <option type="checkbox"> XS
+        <option type="checkbox"> S
+        <option type="checkbox"> M
+        <option type="checkbox"> L
+        <option type="checkbox"> XL
+      </select>
+
+      <label for="sizeincl">Size Inclusion</label>
+      <select id="sizeincl" name="sizeincl" size="3" multiple>
+        <option type="checkbox"> Petite
+        <option type="checkbox"> Petiteable
+        <option type="checkbox"> Plus Size
+      </select>
+      
+      
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" size="3" multiple>
+        <option type="checkbox"> Male
+        <option type="checkbox"> Female
+        <option type="checkbox"> Unisex
+      </select>
+        
+        <label for="patcat">Pattern Category</label>
+        <select id="gender" name="gender" size="3" multiple>
+      <option type="checkbox"> Accessories
+      <option type="checkbox">Costumes     
+      <option type="checkbox">Dolls  
+      <option type="checkbox">Fashion Accessories      
+      <option type="checkbox">Holiday      
+      <option type="checkbox">Home      
+      <option type="checkbox">Kids      
+      <option type="checkbox">Notions      
+      <option type="checkbox">Pets      
+      <option type="checkbox">Embroidery      
+      <option type="checkbox">Crafting Kits      
+      <option type="checkbox">Quilting      
+      <option type="checkbox">Unisex
+      <option type="checkbox">Clothes      
+      <option type="checkbox">Female
+      </select>
+      
+      <label for="patsubcat">Pattern Sub Category</label>
+      <select id="gender" name="gender" size="3" multiple>
+        <option type="checkbox"> hats
+      </select>
+      
+      
+      <label for="patstyle">Pattern Style</label>
+      <select id="patstyle" name="patstyle" size="3" multiple>
+        <option type="checkbox">Shorts
+        <option type="checkbox">Pants
+        <option type="checkbox"> Dresses
+        <option type="checkbox"> Skirts
+        <option type="checkbox"> Jumpers
+        <option type="checkbox"> Tops
+        <option type="checkbox"> Coats
+        <option type="checkbox"> Sweaters
+      </select>
+      
+      
+      <label for="reffabric">Recommended Fabric Types</label>
+      <select id="reffabric" name="reffabric" size="5" multiple>
+        <option type="checkbox"> Wovens
+        <option type="checkbox"> Twill
+        <option type="checkbox"> Knit
+        <option type="checkbox"> Denim
+        <option type="checkbox"> Wool
+      </select>
+      
+      <label for="notions">Notions</label>
+      <select id="notions" name="notions" size="5" multiple>
+        <option type="checkbox"> Buttons
+        <option type="checkbox"> Zipper
+        <option type="checkbox"> bias tape
+        <option type="checkbox"> interfacing
+        <option type="checkbox"> other
+      </select>
+
+         
+      <label for="seasons">Seasons</label>
+      <select id="seasons" name="seasons" size="4" multiple>
+        <option type="checkbox"> Winter
+        <option type="checkbox"> Summer
+        <option type="checkbox"> Spring
+        <option type="checkbox"> Fall
+      </select>
+      
+
+      <label for="favamt">Fab Amt Needed</label>
+      <select id="favamt" name="favamt" size="4" multiple>
+        <option type="checkbox"> 1yrd
+        <option type="checkbox"> 2yrd
+        <option type="checkbox"> 3yrd
+        <option type="checkbox"> 4yrd +
+      </select>
+      
+      
+        <label for="link">Link</label>
+      <input type="url" id="link" name="link">
+      
+      
+      <label for="fileform">File Format</label>
+      <select id="fileform" name="fileform" size="5" multiple>
+        <option type="checkbox"> PDF
+        <option type="checkbox"> A0
+        <option type="checkbox"> A4
+        <option type="checkbox"> Printed
+        <option type="checkbox"> Envelope
+      </select>
+      
+      
+      
+      <label for="easeuse">Ease of use</label>
+      <select id="easeuse" name="easeuse" size="4" multiple>
+        <option type="checkbox"> Beginner
+        <option type="checkbox"> Beginner Advanced
+        <option type="checkbox"> Intermediate
+        <option type="checkbox"> Expert
+        </select>
+        <label for="sewalonglink">Sew along link</label>
+        <input type="url" id="sewalonglink" name="sewalonglink">
+        </section>
+        
+        <section class="form-cont4">
+        <label for="tags">Tags</label>
+        <input type="text" data-role="taginput" data-tag-trigger="Space">
+      
+      
+      
+      <label for="Notes">Notes</label>
+      <textarea name="Notes" rows="10" cols="80">
+        Pattern purchased for Baby. Tested this pattern 1/3/2021
+      </textarea>
+      
+      <label for="statusmake">Have you made this pattern?</label>
+      <input type="radio"> Yes
+      <input type="radio"> No
+      <input type="submit"> 
+    </section>
+
+
+    </form>
+  </div>
 </main>
 
-<footer></footer>
-<script src="app.js" type="text/javascript"></script>
-</script>
-  </body>
-  </html>
+  <footer class="form-foot">&copy MISalz</footer>
+  <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>

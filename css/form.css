@@ -1,0 +1,80 @@
+.formcontainer{
+  display: grid;
+  row-gap: 10px;
+  column-gap: 30px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  justify-self: center;
+  padding: 2%;
+}
+.photoupload{
+  align-self: center;
+  
+  /* padding: 10px; */
+}
+section{
+  display:block;
+}
+.header{
+  grid-area: header;
+  grid-column: 2 / span 8;
+  grid-row: first-line / 1 ;
+  justify-self: center;
+  font-size: 60px;
+  color: white;
+  text-shadow: rgb(210, 20, 115) 5px 5px;
+  text-align: center;
+}
+.form-cont1{
+  display: flex;
+  grid-area: main;
+  grid-column: 1 / span 8;
+  grid-row: second-line / 2 ;
+  justify-self: center;
+  font-size: 60px;
+  color: white;
+  text-shadow: rgb(210, 20, 115) 5px 5px;
+  text-align: center;
+}
+.form-cont2{
+  grid-area: body;
+  grid-column: 2 / span 7;
+  grid-row: third-line / 3 ;
+  justify-self: left;
+  font-size: 20px;
+  color: rgb(95, 11, 125);
+  padding: 10px;
+}
+
+.form-cont2 div{
+  padding: 1em;
+}
+.form-cont3{
+  grid-area: body2;
+  grid-column: 2 / span 8;
+  grid-row: fourth-line / 4 ;
+  justify-self: left;
+  font-size: 20px;
+  color: rgb(95, 11, 125);
+  padding: 1em;
+}
+.form-cont4{
+  display: flex;
+  grid-area: body3;
+  grid-column: 1 / span 8;
+  grid-row: seventh-line / 7 ;
+  justify-self: left;
+  font-size: 20px;
+  color: rgb(95, 11, 125);
+  /* text-align: center; */
+}
+.form-foot{
+  grid-area: footer;
+  grid-column: 1 / span 4;
+  grid-row: eight-line / 8 ;
+  
+}
+
+label option input{
+  margin: 10px 10px 10px 10px;
+}
