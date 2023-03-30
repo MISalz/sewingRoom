@@ -96,6 +96,6 @@ Thoughts, questions, ideas..
 
 
 |Branch|Notes|
----|:---:
-initialSetup| Setting up files, Readme, barebones app
+---|:---
+initialSetup| Setting up files, Readme, barebones app <br>Button: https://dev.to/webdeasy/top-20-css-buttons-animations-f41 <br>Background: https://www.30secondsofcode.org/css/s/polka-dot-pattern/
 [V2](v2)| Notes on link provided
