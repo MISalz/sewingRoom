@@ -98,4 +98,6 @@ Thoughts, questions, ideas..
 |Branch|Notes|
 ---|:---:
 initialSetup| Setting up files, Readme, barebones app
-[V2](v2)| Notes on link provided
+stagingv1| V1 Staging branch, all pull requests will be pushed to this branch first. Main will not be used until final products
+
+[V1](v2)| Notes on link provided
