@@ -1,23 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
 
 *{
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10;
   font-family: 'Edu NSW ACT Foundation', cursive;
-  box-sizing: border-box;
-  font-size: 100px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  text-shadow: rgb(183, 126, 176) 4px 4px;
-  width: 100%;
-  height: 240px;
   background-color: #efd3ee;
   background-image: radial-gradient(#000 10%, transparent 11%),
     radial-gradient(#000 10%, transparent 11%);
   background-size: 60px 60px;
   background-position: 0 0, 30px 30px;
   background-repeat: repeat;
-  
+  box-sizing: border-box;  
 }
 
 .headings{ 
@@ -25,11 +18,15 @@
   color: white;
   text-shadow: rgb(210, 20, 115) 5px 10px;
   text-align: center;
+  font-size: 100px;
+  text-align: center;
+  /* color: rgb(255, 255, 255); */
+  /* text-shadow: rgb(183, 126, 176) 4px 4px; */
 }
 
 /* Button */
 .wrap {
-  height: 100%;
+  height: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,12 +34,12 @@
 .button {
   min-width: 300px;
   min-height: 60px;
-  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
   font-size: 22px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 1.3px;
   font-weight: 700;
-  color: #313133;
+  /* color: #313133; */
   background: #4FD1C5;
 background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
   border: none;
@@ -52,10 +49,10 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
   cursor: pointer;
   outline: none;
   position: relative;
-  padding: 10px;
+  padding: 100px;
   }
 
-button::before {
+.wrap button::before {
 content: '';
   border-radius: 1000px;
   min-width: calc(300px + 12px);
@@ -75,11 +72,11 @@ content: '';
   transform: translateY(-6px);
 }
 
-button:hover::before, button:focus::before {
+.wrap button:hover::before, button:focus::before {
   opacity: 1;
 }
 
-button::after {
+.wrap button::after {
   content: '';
   width: 30px; height: 30px;
   border-radius: 100%;
@@ -92,7 +89,7 @@ button::after {
   animation: ring 1.5s infinite;
 }
 
-button:hover::after, button:focus::after {
+.wrap button:hover::after, button:focus::after {
   animation: none;
   display: none;
 }
@@ -110,27 +107,47 @@ button:hover::after, button:focus::after {
   }
 }
 
-/* Sidebar */
+/* Hamburger menu */
+.dropbtn {
+  background-color: #db6bfa;
+  color: white;
+  padding: 5px;
+  font-size: 30px;
+  border: none;
+}
 
-.hero{
-width: 100%;
-height:100vh;
-}
-.menu-icon{
+/* The container <div> - needed to position the dropdown content */
+.dropdown button{
   position: absolute;
-  top:0;
-  left:0;
-  width: 150px;
-  height: 150px;
-  /* background: rgba(255,255,255,0.5); */
-  padding:30px 25px;
-  cursor:pointer;
+  top: 10px; left: 15px;
+  display: inline-block;
+  background-color: #cd8686;
 }
-.sidebar{
-width: 35%;
-height: 100%;
-position: absolute;
-top:0;
-right:0;
-background-image: linear-gradient(rgba(7,0,60,0.85), rgba(7,0,60,0.75));
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #cd8686;
+  min-width: 60px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
+
+/* Links inside the dropdown */
+.dropdown-content button a {
+  color: blue;
+  padding: 2px 6px;
+  text-decoration: none;
+  display: block;
+  background-color: #cd8686;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(221, 221, 221);}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e3f8e;}
