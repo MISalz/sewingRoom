@@ -4,7 +4,9 @@
 *Author:* Michelle Salazar
 
 ----
+
 ## Problem Domain
+
 Create a app for tracking sewing patterns the user owns, would like to own or self drafted patterns.
 
 Within the app the user should be able to track things like brand, pattern number, photo of pattern, categories, has it been made, user rating ease of use, actual notes on user experience with pattern, fabric used, measurements.
@@ -15,6 +17,7 @@ The user should be able to filter any list by categories. The user should be abl
 The user should be able to add additional categories, options to any pattern which will be recorded and implemented into the pre-used list.
 
 ---
+
 ## Feature Tasks and Requirements
 
 <ul><li>
@@ -46,6 +49,7 @@ possible pop out pattern selected
 </li>
 
 ---
+
 ## Implementation Notes
 
 <ul><li>
@@ -79,6 +83,7 @@ pip install pytest -->
 <!-- pip freeze > requirements.txt -->
 
 ## User Acceptance Tests
+
 The application must:
 <ul><li>
 
