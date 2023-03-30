@@ -97,5 +97,5 @@ Thoughts, questions, ideas..
 
 |Branch|Notes|
 ---|:---
-initialSetup| Setting up files, Readme, barebones app <br>Button: https://dev.to/webdeasy/top-20-css-buttons-animations-f41 <br>Background: https://www.30secondsofcode.org/css/s/polka-dot-pattern/
+initialSetup| Setting up files, Readme, barebones app<br>Tutorial: https://www.youtube.com/watch?v=SpymwnX52qI <br>Button: https://dev.to/webdeasy/top-20-css-buttons-animations-f41 <br>Background: https://www.30secondsofcode.org/css/s/polka-dot-pattern/<br> Sewing Button: <a href="https://www.vecteezy.com/free-vector/sew-icon">Sew Icon Vectors by Vecteezy</a>
 [V2](v2)| Notes on link provided
