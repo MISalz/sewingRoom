@@ -95,7 +95,7 @@ The application must:
 Thoughts, questions, ideas..
 
 
-|Version|Notes|
+|Branch|Notes|
 ---|:---:
-[V1](v1)| Notes on link provided
+initialSetup| Setting up files, Readme, barebones app
 [V2](v2)| Notes on link provided
